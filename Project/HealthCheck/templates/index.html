@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../static/css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+  <link href="../static/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+  <link href="../static/css/bootstrap-grid.css" rel="stylesheet" type="text/css" media="all">
+  <link href="../static/css/bootstrap-grid.min.css" rel="stylesheet" type="text/css" media="all">
+  <title>HealthCheck</title>
+</head>
+
+<body >
+  <div class="container">
+    <div class="row">
+      <table class="table table-borderless">
+        <thead >
+          <tr>
+
+
+            <th scope="col">URLs</th>
+            <th scope="col">Status</th>
+            <th scope="col">Services Status</th>
+          </tr>
+        </thead>
+        <tbody >
+          
+          <tr>
+
+            <td>{{ res1.url }}</td>
+            {% if res1.status == 'UP' %}
+               <td class="text-success">{{ res1.status }}</td>
+            {% else %}
+            <td class="text-danger">{{ res1.status }}</td>
+            {% endif %}
+            {% if res1.ser_tom == 'UP' %}
+            <td class="text-success"> Tomcat :{{ res1.ser_tom }}</td>
+            {% else %}
+            <td class="text-danger"> Tomcat :{{ res1.ser_tom }}</td>
+            {% endif %}
+          </tr>
+        
+          
+
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -11,11 +11,11 @@
   <title>HealthCheck</title>
 </head>
 
-<body >
+<body>
   <div class="container">
     <div class="row">
       <table class="table table-borderless">
-        <thead >
+        <thead>
           <tr>
 
 
@@ -24,24 +24,175 @@
             <th scope="col">Services Status</th>
           </tr>
         </thead>
-        <tbody >
-          
-          <tr>
+        <tbody>
 
-            <td>{{ res1.url }}</td>
-            {% if res1.status == 'UP' %}
-               <td class="text-success">{{ res1.status }}</td>
+          <tr>
+            <td>{{ r.u1.url }}</td>
+            {% if r.u1.status == 'UP' %}
+            <td class="text-success">{{ r.u1.status }}</td>
             {% else %}
-            <td class="text-danger">{{ res1.status }}</td>
+            <td class="text-danger">{{ r.u1.status }}</td>
             {% endif %}
-            {% if res1.ser_tom == 'UP' %}
-            <td class="text-success"> Tomcat :{{ res1.ser_tom }}</td>
+            {% if r.u1.ser_tom == 'UP' %}
+            <td class="text-success"> Tomcat :{{ r.u1.ser_tom }}</td>
             {% else %}
-            <td class="text-danger"> Tomcat :{{ res1.ser_tom }}</td>
+            <td class="text-danger"> Tomcat :{{ r.u1.ser_tom }}</td>
             {% endif %}
           </tr>
-        
           
+          <tr>
+            <td>{{ r.u2.url }}</td>
+            {% if r.u2.status == 'UP' %}
+            <td class="text-success">{{ r.u2.status }}</td>
+            {% else %}
+            <td class="text-danger">{{ r.u2.status }}</td>
+            {% endif %}
+            {% if r.u2.ser_tom == 'UP' %}
+            <td class="text-success"> Tomcat :{{ r.u2.ser_tom }}</td>
+            {% else %}
+            <td class="text-danger"> Tomcat :{{ r.u2.ser_tom }}</td>
+            {% endif %}
+          </tr>
+
+
+          <tr>
+            <td>{{ r.u3.url }}</td>
+            {% if r.u3.status == 'UP' %}
+            <td class="text-success">{{ r.u3.status }}</td>
+            {% else %}
+            <td class="text-danger">{{ r.u3.status }}</td>
+            {% endif %}
+            {% if r.u3.ser_tom == 'UP' %}
+            <td class="text-success"> Tomcat :{{ r.u3.ser_tom }}</td>
+            {% else %}
+            <td class="text-danger"> Tomcat :{{ r.u3.ser_tom }}</td>
+            {% endif %}
+          </tr>
+
+
+          <tr>
+            <td>{{ r.u4.url }}</td>
+            {% if r.u4.status == 'UP' %}
+            <td class="text-success">{{ r.u4.status }}</td>
+            {% else %}
+            <td class="text-danger">{{ r.u4.status }}</td>
+            {% endif %}
+            {% if r.u4.ser_coldfusion == 'UP' %}
+            <td class="text-success"> ColdFusion :{{ r.u4.ser_coldfusion }}</td>
+            {% else %}
+            <td class="text-danger"> ColdFusion :{{ r.u4.ser_coldfusion }}</td>
+            {% endif %}
+          </tr>
+
+
+          <tr>
+            <td>{{ r.u5.url }}</td>
+            {% if r.u5.status == 'UP' %}
+            <td class="text-success">{{ r.u5.status }}</td>
+            {% else %}
+            <td class="text-danger">{{ r.u5.status }}</td>
+            {% endif %}
+            <td> </td>
+          </tr>
+
+
+          <tr>
+            <td>{{ r.u6.url }}</td>
+            {% if r.u6.status == 'UP' %}
+            <td class="text-success">{{ r.u6.status }}</td>
+            {% else %}
+            <td class="text-danger">{{ r.u6.status }}</td>
+            {% endif %}
+            {% if r.u6.ser_apppool == 'UP' %}
+            <td class="text-success"> AppPool :{{ r.u6.ser_apppool }}</td>
+            {% else %}
+            <td class="text-danger"> AppPool :{{ r.u6.ser_apppool }}</td>
+            {% endif %}
+          </tr>
+          <tr>
+            <td> </td>
+            <td> </td>
+            {% if r.u6.ser_IIS == 'UP' %}
+            <td class="text-success"> IIS :{{ r.u6.ser_IIS }}</td>
+            {% else %}
+            <td class="text-danger"> IIs :{{ r.u6.ser_IIS }}</td>
+            {% endif %}
+          </tr>
+
+          <tr>
+            <td>{{ r.u7.url }}</td>
+            {% if r.u7.status == 'UP' %}
+            <td class="text-success">{{ r.u7.status }}</td>
+            {% else %}
+            <td class="text-danger">{{ r.u7.status }}</td>
+            {% endif %}
+            {% if r.u7.ser_apppool == 'UP' %}
+            <td class="text-success"> AppPool :{{ r.u7.ser_apppool }}</td>
+            {% else %}
+            <td class="text-danger"> AppPool :{{ r.u7.ser_apppool }}</td>
+            {% endif %}
+          </tr>
+          <tr>
+            <td> </td>
+            <td> </td>
+            {% if r.u7.ser_IIS == 'UP' %}
+            <td class="text-success"> IIS :{{ r.u7.ser_IIS }}</td>
+            {% else %}
+            <td class="text-danger"> IIs :{{ r.u7.ser_IIS }}</td>
+            {% endif %}
+          </tr>
+
+
+          <tr>
+            <td>{{ r.u8.url }}</td>
+            {% if r.u8.status == 'UP' %}
+            <td class="text-success">{{ r.u8.status }}</td>
+            {% else %}
+            <td class="text-danger">{{ r.u8.status }}</td>
+            {% endif %}
+            {% if r.u8.ser_apppool == 'UP' %}
+            <td class="text-success"> AppPool :{{ r.u8.ser_apppool }}</td>
+            {% else %}
+            <td class="text-danger"> AppPool :{{ r.u8.ser_apppool }}</td>
+            {% endif %}
+          </tr>
+          <tr>
+            <td> </td>
+            <td> </td>
+            {% if r.u8.ser_IIS == 'UP' %}
+            <td class="text-success"> IIS :{{ r.u8.ser_IIS }}</td>
+            {% else %}
+            <td class="text-danger"> IIS :{{ r.u8.ser_IIS }}</td>
+            {% endif %}
+          </tr>
+
+
+          <tr>
+            <td>{{ r.u9.url }}</td>
+            {% if r.u9.status == 'UP' %}
+            <td class="text-success">{{ r.u9.status }}</td>
+            {% else %}
+            <td class="text-danger">{{ r.u9.status }}</td>
+            {% endif %}
+            {% if r.u9.ser_coldfusion == 'UP' %}
+            <td class="text-success"> ColdFusion :{{ r.u9.ser_coldfusion }}</td>
+            {% else %}
+            <td class="text-danger"> ColdFusion :{{ r.u9.ser_coldfusion }}</td>
+            {% endif %}
+          </tr>
+          <tr>
+            <td> </td>
+            <td> </td>
+            {% if r.u9.ser_IIS == 'UP' %}
+            <td class="text-success"> IIS :{{ r.u9.ser_IIS }}</td>
+            {% else %}
+            <td class="text-danger"> IIs :{{ r.u9.ser_IIS }}</td>
+            {% endif %}
+          </tr>
+
+
+
+
 
 
         </tbody>

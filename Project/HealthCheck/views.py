@@ -95,7 +95,7 @@ def show(request):
             "ser_coldfusion":u9_coldfusion,
             "ser_IIS":u9_IIS}
    
-    """
+    
     p1 = ut.connect("192.168.147.10","vagrant")
     url10 ='https://faatracker.slb.com/login.aspx?msg=account'
     st10 =ut.status(url10)
@@ -103,7 +103,7 @@ def show(request):
     rst10 = {"url":url10,
             "status":st10,
             }
-    
+    """
     p1 = ut.connect("192.168.147.10","vagrant")
     url11 ='https://intime.itt.slb.com/'
     st11 =ut.status(url11)
@@ -134,7 +134,7 @@ def show(request):
             "ser_IIS":u13_IIS}
     
     res ={ "u1":rst1,"u2":rst2,"u3":rst3,"u4":rst4,"u5":rst5,
-            "u6":rst6,"u7":rst7,"u8":rst8,"u9":rst9,
+            "u6":rst6,"u7":rst7,"u8":rst8,"u9":rst9,"u10":rst10,
             "u12":rst12,"u13":rst13 }
 
         

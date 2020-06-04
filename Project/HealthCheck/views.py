@@ -13,7 +13,7 @@ socket.getaddrinfo('localhost', 8000)
 def show(request):
     ut = util()
     p1 = ut.connect("192.168.147.10","vagrant")
-    url1 = 'https://sweet.slb.com:8444/sweet-web/#!/login'
+    url1 = 'https://www.google.co.in/'
     st1 =ut.status(url1)
     u1_tom = ut.checkTomcat(p1)
     rst1 = {"url":url1,
@@ -21,7 +21,7 @@ def show(request):
             "ser_tom":u1_tom}
 
     p1 = ut.connect("192.168.147.10","vagrant")
-    url2 ='https://smgs.ams.slb.com/sv/mfgx/login.jsp;jsessionid=16hgq4dgw1acf.sv_ui2'
+    url2 ='https://www.google.co.in/'
     st2 =ut.status(url2)
     u2_tom = ut.checkTomcat(p1)
     rst2 = {"url":url2,
@@ -29,7 +29,7 @@ def show(request):
             "ser_tom":u2_tom}
 
     p1 = ut.connect("192.168.147.10","vagrant")
-    url3 ='https://swpdm.slb.com:7105/Windchill/app/'
+    url3 ='https://www.google.co.in/'
     st3 =ut.status(url3)
     u3_tom = ut.checkTomcat(p1)
     rst3 = {"url":url3,
@@ -37,7 +37,7 @@ def show(request):
             "ser_tom":u3_tom}
     
     p1 = ut.connect("192.168.147.10","vagrant")
-    url4 =' https://teams.sugar-land.oilfield.slb.com/App_Site_Select.cfm'
+    url4 =' https://www.google.co.in/'
     st4 =ut.status(url4)
     u4_coldfusion = ut.checkTomcat(p1)
     rst4 = {"url":url4,
@@ -45,7 +45,7 @@ def show(request):
             "ser_coldfusion":u4_coldfusion}
 
     p1 = ut.connect("192.168.147.10","vagrant")
-    url5 ='https://wiki.slb.com/#all-updates'
+    url5 ='https://www.google.co.in/'
     st5 =ut.status(url5)
    
     rst5 = {"url":url5,
@@ -53,7 +53,7 @@ def show(request):
             }
 
     p1 = ut.connect("192.168.147.10","vagrant")
-    url6 ='https://emspeed.slb.com/portal.aspx'
+    url6 ='https://www.google.co.in/'
     st6 =ut.status(url6)
     u6_Apppool = ut.checkTomcat(p1)
     u6_IIS = ut.checkTomcat(p1)
@@ -65,7 +65,7 @@ def show(request):
     
 
     p1 = ut.connect("192.168.147.10","vagrant")
-    url7 ='https://www.ptr.slb.com/'
+    url7 ='https://www.google.co.in/'
     st7 =ut.status(url7)
     u7_Apppool = ut.checkTomcat(p1)
     u7_IIS = ut.checkTomcat(p1)
@@ -76,7 +76,7 @@ def show(request):
     
 
     p1 = ut.connect("192.168.147.10","vagrant")
-    url8 ='https://clms.ems.slb.com/emsix.aspx'
+    url8 ='https://www.google.co.in/'
     st8 =ut.status(url8)
     u8_Apppool = ut.checkTomcat(p1)
     u8_IIS = ut.checkTomcat(p1)
@@ -86,7 +86,7 @@ def show(request):
             "ser_IIS":u8_IIS}
 
     p1 = ut.connect("192.168.147.10","vagrant")
-    url9 ='https://equality.slb.com/'
+    url9 ='https://www.google.co.in/'
     st9 =ut.status(url9)
     u9_coldfusion = ut.checkTomcat(p1)
     u9_IIS = ut.checkTomcat(p1)
@@ -97,7 +97,7 @@ def show(request):
    
     
     p1 = ut.connect("192.168.147.10","vagrant")
-    url10 ='https://faatracker.slb.com/login.aspx?msg=account'
+    url10 ='https://www.google.co.in/'
     st10 =ut.status(url10)
     
     rst10 = {"url":url10,
@@ -105,7 +105,7 @@ def show(request):
             }
     """
     p1 = ut.connect("192.168.147.10","vagrant")
-    url11 ='https://intime.itt.slb.com/'
+    url11 ='https://www.google.co.in/'
     st11 =ut.status(url11)
     u11_Apppool = ut.checkTomcat(p1)
     u11_IIS = ut.checkTomcat(p1)
@@ -116,7 +116,7 @@ def show(request):
    
     """
     p1 = ut.connect("192.168.147.10","vagrant")
-    url12 ='https://www.gems.slb.com/'
+    url12 ='https://www.google.co.in/'
     st12 =ut.status(url12)
     u12_tom = ut.checkTomcat(p1)
     rst12 = {"url":url12,
@@ -124,7 +124,7 @@ def show(request):
             "ser_tom":u12_tom}
 
     p1 = ut.connect("192.168.147.10","vagrant")
-    url13 ='https://www.pdd.slb.com/'
+    url13 ='https://www.google.co.in/'
     st13 =ut.status(url13)
     u13_coldfusion = ut.checkTomcat(p1)
     u13_IIS = ut.checkTomcat(p1)
